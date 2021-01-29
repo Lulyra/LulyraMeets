@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import '../styles/Header.css';
 
 function Header() {
@@ -7,11 +7,13 @@ function Header() {
     <Router>
       <header className="homeHeader">
         <ul className="homeHeader_title">
-          <li>Lulyra Meets</li>
+          <li><a href="http://localhost:3000/">Lulyra Meets</a></li>
         </ul>
         <ul className="homeHeader_options">
-          <li>Login</li>
-          <li><a href="http://localhost:3000/register">Register</a></li>
+          <input placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button type="submit"><a href="http://localhost:3000/login">Login</a></button>
+          <button type="button"><a href="http://localhost:3000/register">Register</a></button>
         </ul>
       </header>
     </Router>
