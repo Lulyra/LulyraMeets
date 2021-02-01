@@ -1,0 +1,19 @@
+.room .chat {
+    display: flex;
+    color: #ffd369;
+    flex: 0.3;
+    flex-direction: column;
+    background-color: #393e46;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.chat .textInput {
+    background-color: #eeeeee;
+    padding: 5px;
+    margin: 30px;
+}
+
+.chat .sendButton {
+    color: #ffd369;
+}
