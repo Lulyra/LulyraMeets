@@ -3,7 +3,7 @@ import nextId from 'react-id-generator';
 import io from 'socket.io-client';
 import '../styles/Chat.css';
 
-const socket = io.connect('http://localhost:4001');
+const socket = io.connect('/');
 
 function Chat() {
   const [state, setState] = useState({ text: '' });
